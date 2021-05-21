@@ -54,8 +54,9 @@ This is a repository is about developing a model that is able to predict a yoga 
 
 This project is currently deployed locally, if you wanted to try to run this on your own and you dont have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.
 
-**Here is a sample dashboard: **
-![image](https://user-images.githubusercontent.com/60827480/119014060-e3530080-b997-11eb-8cfd-409a2a8c565e.png)
+**Here is a sample dashboard:**!
+
+[image](https://user-images.githubusercontent.com/60827480/119102962-e80cc880-ba1a-11eb-91d0-45875f92da5a.png)
 
 ---
 
@@ -180,13 +181,6 @@ This has 2 versions:
 
 - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
 - In this project, pandas is used convert a list to create a dataframe and convert that dataframe to a csv
-
-**Heroku** //www.heroku.com
-
-- Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
-- In this project, Heroku is used to deploy the app but due to limited GB since we are only using the free version, it was returning an error that the slug size is too big.
-- As free users of Heroku, we are only allowed of up to 500MB slug size.
-- Everything is already in the repository, we just need a bigger slug size to deploy it
 
 ---
 
