@@ -56,7 +56,8 @@ This project is currently deployed locally, if you wanted to try to run this on 
 
 **Here is a sample dashboard:**!
 
-[image](https://user-images.githubusercontent.com/60827480/119102962-e80cc880-ba1a-11eb-91d0-45875f92da5a.png)
+![image](https://user-images.githubusercontent.com/60827480/119103353-5baed580-ba1b-11eb-9537-4cdc7afc5376.png)
+
 
 ---
 
