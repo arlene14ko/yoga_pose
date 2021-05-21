@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<br>
+<div class="card" style="background: transparent; padding: 20px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class="card-body" style="margin-left: 20px; margin-right: 20px; ">
+        <div class="bs-example">
+            <!-- NAVIGATION TABS -->
+            <ul class="nav nav-tabs" >
+                <li class="nav-item">
+                    <a href="#video" style="color: rgb(6,57,112);" class="nav-link" data-toggle="tab">Live Video</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#upload" style="color: rgb(6,57,112);" class="nav-link" data-toggle="tab">Upload File</a>
+                </li>
+            </ul>
+            <!-- NAVIGATION TAB CONTENT -->
+            <div class="tab-content">
+
+                <!-- REAL-TIME VIDEO ANALYSIS -->
+                <div class="tab-pane fade show active" id="video">
+                    <br>
+                    <div class="card" style="background-color: transparent;">
+                        <div class="card-body">
+                            <h2 class="mt-2" style="color: rgb(138,43,226); font-weight: bold;"><strong> Real-Time Feed</strong></h4>
+                            <br>
+                            <button onclick="location.href='/live_feed'"  class="btn btn-outline-success">Start video</button>
+                            </a>
+                            <br>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UPLOAD FILE TAB -->
+                <div class="tab-pane fade" id="upload">
+                    <br>
+                    <h2 class="mt-2" style="color: rgb(138,43,226); font-weight: bold;">Upload Video</h4>
+                    <br>
+                    <div class="col d-flex justify-content-center">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label" >Choose the video: </label>
+                                <input name="file" class="form-control form-control-sm" id="formFileSm" type="video/mp4" style="
+                                          border: 1px solid whitesmoke;
+                                          height: 34px;
+                                          background-color: transparent;">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-outline-success">Analyze</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<div class="card" style="
+        width: 100%;
+        height: 70vh;
+        object-fit: contain;">
+    <div class="card-body">
+        <div class="container" style="display: flex; height: 100px;">
+            <div style="width: 70%">
+                <img src="{{ url_for('video_feed') }}"
+                    style="border-radius: 3%; box-shadow: 0px 0px 10px rgb(147,112,219);" />
+            </div>
+            <div style="flex-grow: 1; text-align: left; color: rgb(146, 73, 214)">
+                <div class="card" style=" padding-left: 30px">
+                    <div class="card-body">
+                        <h3><span>Name: </span> <span style="color: rgb(60,179,113)"> Anna</span> </h3>
+                        <p><span>Date:</span> <span id="date" style="color: rgb(60,179,113)></span> </p>
+                        <h5><span>Yoga Teacher: </span> <span style=" color: rgb(60,179,113)"> Joanna's Class</span>
+                            </h5>
+                        <h5><span>Yoga Class:</span> <span style="color: rgb(60,179,113)"> Yoga for Beginners</span>
+                        </h5>
+                        <h6>Class Type: </h6>
+                        <br>
+                        <h6>Purpose: </h6>
+                        <br>
+                        <h6>Recommendations: </h6>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<p id="date"></p>
+<script>
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
+
+{% endblock content %}
